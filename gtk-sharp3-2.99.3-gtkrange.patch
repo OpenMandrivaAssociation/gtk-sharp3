@@ -1,0 +1,13 @@
+diff --git a/sample/test/TestRange.cs b/sample/test/TestRange.cs
+index 35fc8a6..f052e6b 100644
+--- a/Source/sample/test/TestRange.cs
++++ b/Source/sample/test/TestRange.cs
+@@ -57,7 +57,7 @@ namespace WidgetViewer {
+ 			vscale.SetSizeRequest (-1, 200);
+ 			vscale.Digits = 2;
+ 			vscale.DrawValue = true;
+-			((Range) vscale).Inverted = true;
++			((Gtk.Range) vscale).Inverted = true;
+ 			hbox.PackStart (vscale, true, true, 0);
+ 
+ 			vscale = new VScale (adjustment);
