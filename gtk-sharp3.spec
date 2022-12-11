@@ -85,15 +85,15 @@ sed -i "s/gdk_api_includes/gio_api_includes/" Source/sample/valtest/generated/me
 %files
 %doc README.md
 %license LICENSE
-#{_monogacdir}/*
-#{_monodir}/GtkSharp-3.0
-#{_monodir}/atk-sharp
-#{_monodir}/cairo-sharp
-#{_monodir}/gdk-sharp
-#{_monodir}/gtk-sharp
-#{_monodir}/gio-sharp
-#{_monodir}/glib-sharp
-#{_monodir}/pango-sharp
+%{_prefix}/lib/gac/
+%{_prefix}/lib/GtkSharp-3.0
+%{_prefix}/lib/atk-sharp
+%{_prefix}/lib/cairo-sharp
+%{_prefix}/lib/gdk-sharp
+%{_prefix}/lib/gtk-sharp
+%{_prefix}/lib/gio-sharp
+%{_prefix}/lib/glib-sharp
+%{_prefix}/lib/pango-sharp
 
 %files gapi
 %{_bindir}/gapi3-codegen
